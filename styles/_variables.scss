@@ -1,0 +1,51 @@
+$pink-100: #FEBCFF;
+$pink-200: #FD8FFF;
+$pink-300: #FA00FF;
+$pink-400: #5A3C5A;
+$pink-500: #291029;
+$white: #fff;
+
+$primary-font: 'Poppins', sans-serif;
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+.f-regular {
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.f-semi-bold {
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.f-bold {
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    height: 50px;
+    border: none;
+    width: 150px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    color: $white;
+    background-color: $pink-500;
+}
+
+.btn-secondary {
+    color: $pink-500;
+    border: 1px solid $pink-500;
+    background-color: $white;
+}

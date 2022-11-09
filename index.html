@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo landing</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="styles/main.styles.css">
+</head>
+<body>
+      <!------------------ Header ------------------>
+    <header class="head">
+        <div class="head__logo">
+            <img src="./assets/logo.png" alt="logo">
+            <p class="f-semi-bold">WindAesthetics</p>
+        </div>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a class="f-regular" href="#overview">Overview</a></li>
+                <li class="navigation__item"><a class="f-regular" href="#features">Features</a></li>
+                <li class="navigation__item"><a class="f-regular" href="#about">About</a></li>
+                <li class="navigation__item"><a class="f-regular" href="#pricing">Pricing</a></li>
+            </ul>
+        </nav>
+        <div class="head__actions">
+            <button class="btn btn-primary">Sign In</button>
+            <button class="btn btn-secondary">Sign Up</button>
+        </div>
+    </header>
+
+    <main>
+        <!------------------ Overview ------------------>
+        <section id="overview" class="overview">
+            <div class="overview__body">
+                <h1 class="f-semi-bold overview__title animate__animated animate__backInLeft">Practice your Photography skills with ease</h1>
+                <p class="f-semi-bold overview__description animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. </p>
+                <img class="overview__img" src="./assets/overview_img.png" alt="overview">
+
+                <div class="overview__actions">
+                    <button class="btn f-bold">Get Started</button>
+                    <button class="btn f-bold">Discount</button>
+                </div>
+            </div>
+        </section>
+
+        <!------------------ Features ------------------>
+        <section id="features" class="features">
+            <div class="features__info">
+                <h2 class="f-semi-bold features__title">Why we are better than others</h2>
+                <p class="features__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            </div>
+            
+            <div class="features__slider">
+                <div class="features__card">
+                    <img src="./assets/features_img_1.png" alt="features_img_1">
+                    <h4 class="f-semi-bold">Convenient study schedule</h4>
+                </div>
+
+                <div class="features__card">
+                    <img src="./assets/features_img_2.png" alt="features_img_2">
+                    <h4 class="f-semi-bold">Checked homework by teachers</h4>
+                </div>
+
+                <div class="features__card">
+                    <img src="./assets/features_img_3.png" alt="features_img_3">
+                    <h4 class="f-semi-bold">Modern internet platform</h4>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $('.features__slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+    });
+    </script>
+</body>
+</html>
